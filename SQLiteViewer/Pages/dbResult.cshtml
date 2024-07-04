@@ -1,0 +1,15 @@
+﻿@page
+@model SQLiteViewer.dbResultModel
+
+<table>
+    <tbody>
+        @foreach (var entry in Model.DBResultList)
+        {
+            <tr>
+                <td>@entry.Key : </td>
+                <td>  @entry.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>Test11</p>
